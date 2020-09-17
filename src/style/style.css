@@ -1,0 +1,111 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.h1 {
+    color: #ffffff;
+    padding: 15px 30px;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    word-spacing: -4px;
+    font-style: normal;
+    font-variant: normal;
+  }
+
+.icon-toolbar{
+    margin: 20px 5px;
+    padding: 10px 10px;
+    border-style: none;
+    background: #0277BD;
+    color: #ffffff;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.flex-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.h1-modal{
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 15px;
+    background-color: #0288D1;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    text-align-last: center;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.img{
+    margin-top: 40px;
+    margin-right: 0px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+    text-align: end;
+}
+  .table {
+    border-collapse: collapse;/*juntamos los border por td y la tabla en si en uno solo*/
+    width: 100%;
+    border: 3px solid WHITE;
+    border-radius: 5px;
+  }
+  .th{
+    height: 30px;
+    text-align: center;/*Alineamos el texto al centro ---th por defecto esta alineado al centro*/
+    /* vertical-align: bottom; Alineamos el texto verticalmente hacia abajo*/
+    padding: 1px;
+    background-color:#0288D1;
+    color: white;
+    border: 3px solid WHITE;
+    /* border-radius: 15px; */
+    /*border-bottom: 1px solid #ddd;para borde solo horizontal*/
+  }
+  .td{
+    height: 30px;
+    text-align: center;/*Alineamos el texto al centro ---th por defecto esta alineado al centro*/
+     /* vertical-align: bottom; Alineamos el texto verticalmente hacia abajo*/
+    padding: 1px;
+    border: 3px solid WHITE;
+    /*border-bottom: 1px solid #ddd;para borde solo horizontal*/
+  }
+
+  .otro{
+    height: 30px;
+    padding: 1px;
+    font-size: 1rem;
+    text-align: left;
+    /*border-bottom: 1px solid #ddd;para borde solo horizontal*/
+  }
+
+  .cursor{
+    cursor: pointer;
+  }
+
+.vista {
+  padding: 40px;
+  padding-top: 20px;
+  max-width: 95%;
+  margin: 0px 23px 23px 23px;
+  border: 2px solid #D3D3D3;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+body {
+    background: url(http://i63.tinypic.com/2nvqki1.png) center;
+    background-size: cover;
+    background-color: #282C34;
+    width: 100%;
+    height: 100%;
+}

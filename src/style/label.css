@@ -1,0 +1,62 @@
+.label {
+    font-size: 26px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    color: #0288D1;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.invitado{
+    font-weight: bold;
+    color: #343A40;
+}
+
+.descripcion{
+    color: #6C757D;
+}
+.label-carga{
+    margin-left: 0px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    color: #0288D1;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.label-number{
+    margin-left: 5px;
+    font-size: 45px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    color: #242424;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.labelinput{
+    border-radius: 12px;
+    border: 2px solid #d3d3d3;
+    padding: 8px;
+    font-size: 18px;
+    color: black;
+    width: 90%;
+    margin-top: 20px;
+}
+
+
+@media (max-width:685px) {
+    .label{
+        color: black;
+        margin-left: 25px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
