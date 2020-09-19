@@ -12,39 +12,34 @@ class Login extends React.Component {
         this.onSubmit = this.onSubmit.bind(this);
     }
 
-    onSubmit(e) {
+    async onSubmit(e) {
         e.preventDefault();
         let usuarioLogin = this.state.usuarioLogin.value;
         let passwordLogin = this.state.passwordLogin.value;
-
-        fetch('https://sigapdev2-cargapagos-back.herokuapp.com/login', {
-            method: 'post',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({"username": usuarioLogin, "password": passwordLogin})
-        }).then(res => res.json())
-            .then(res => {
-                if(res === true){
-                    auth.login(()=>{
-                        this.props.history.push('/modulo-carga');
-                    });
-                }else{
-                    alert("Datos Incorrectos.");
-                }
-            })
-            .catch(error => {
-                console.log(error);
-            });
-
-
-
-
-
-
-
-
+        console.log(usuarioLogin,passwordLogin)
+        try {
+            await fetch('https://sigapdev2-cargapagos-back.herokuapp.com/login', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({"username": usuarioLogin, "password": passwordLogin})
+            }).then(res => res.json())
+                .then(res => {
+                    if(res === true){
+                        auth.login(()=>{
+                            this.props.history.push('/modulo-carga');
+                        });
+                    }else{
+                        alert("Datos Incorrectos.");
+                    }
+                }).catch(error => {
+                    console.log("Problemas de conexión");
+                }); 
+        } catch (error) {
+            alert("datos incorrectos")
+        }
     }
 
     render() {
